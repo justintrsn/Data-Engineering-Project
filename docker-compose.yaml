@@ -27,8 +27,8 @@ services:
 
   elt_script:
     build:
-      context: ./elt_script # Directory containing the Dockerfile and elt_script.py
-      dockerfile: Dockerfile # Name of the Dockerfile, if it's something other than "Dockerfile", specify here
+      context: ./elt_script 
+      dockerfile: Dockerfile 
     command: [ "python", "elt_script.py" ]
     networks:
       - elt_network
